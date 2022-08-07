@@ -1,0 +1,64 @@
+<!-- Comments primarily used as notes or divider lines to visually improve code -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
+    <title>Job Application Mockup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" type="text/css" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Divider Line -->
+
+<body>
+    <h1 id="title">Job Application</h1>
+    <p id="description">Feeling lucky? Apply, we are hiring!</p>
+    <!-- Survey Form Below -->
+    <form action="" id="survey-form">
+        <fieldset class="fieldset1">
+            <label id="name-label">Name <input type="text" name="name" id="name" placeholder="John Smith" required></label>
+            <label id="email-label">Email <input type="email" name="email" id="email" placeholder="JohnSmith@email.com" required></label>
+            <label id="number-label">Age <input type="number" name="number" id="number" min="18" max="120" placeholder="Age"></label>
+        </fieldset>
+        <!-- Divider Line -->
+        <fieldset class="fieldset2">
+            <label>What type of employment are you looking for?
+                <select id="dropdown">
+                    <option disabled selected>Select One</option>
+                    <option>Full Time</option>
+                    <option>Part Time</option>
+                    <option>Seasonal</option>
+                    <option>On Call</option>
+                    <option>Any</option>
+                </select>
+            </label>
+        </fieldset>
+        <!-- Divider Line -->
+        <fieldset class="fieldset3">
+            <p>Do you have any experience?</p>
+            <label class="exp"><input type="radio" name="experience" value="yes" required> Yes</label>
+            <label class="exp"><input type="radio" name="experience" value="no" required> No</label>
+            <label class="exp"><input type="radio" name="experience" value="a-little" required> A little</label>
+        </fieldset>
+        <!-- Divider Line -->
+        <fieldset class="fieldset4">
+            <p>How did you hear about us? (Check all that apply)</p>
+            <label class="ref"><input type="checkbox" name="reference" value="google"> Google</label>
+            <label class="ref"><input type="checkbox" name="reference" value="indeed"> Indeed</label>
+            <label class="ref"><input type="checkbox" name="reference" value="linkedin"> LinkedIn</label>
+            <label class="ref"><input type="checkbox" name="reference" value="glassdoor"> GlassDoor</label>
+            <label class="ref"><input type="checkbox" name="reference" value="other"> Other</label>
+        </fieldset>
+        <fieldset class="fieldset5">
+            <p>Why do you think you are the ideal candidate for this position?</p>
+            <textarea placeholder="Enter your response here..." required id="textbox" cols="100"></textarea>
+        </fieldset>
+        <input type="submit" id="submit"></button>
+    </form>
+</body>
+
+</html>
